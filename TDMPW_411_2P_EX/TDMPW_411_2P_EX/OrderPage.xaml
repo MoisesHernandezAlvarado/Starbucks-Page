@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_EX.OrderPage"
+             Title="OrderPage">
+
+    <Grid Margin="15" RowDefinitions=".15*, .042*, .03*, .67*, .08*" >
+        <Label 
+            Grid.Row="0"
+            Text="Ordena"
+            FontSize="Title"
+            FontAttributes="Bold"
+            VerticalTextAlignment="Center"
+            />
+        
+        <VerticalStackLayout Grid.Row="1" Spacing="8" HorizontalOptions="Start">
+            <Label 
+                Text="Menú"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                />
+            <BoxView 
+                Color="Green"
+                HeightRequest="4"
+                WidthRequest="70"
+                VerticalOptions="End"/>
+        </VerticalStackLayout>
+
+        <BoxView 
+            Grid.Row="2"
+            Color="LightGray"
+            HeightRequest="10"
+            VerticalOptions="Start"
+            />
+
+        <Grid Grid.Row="3" RowDefinitions=".12*, .22*, .22*, .22*, .22*">
+            
+            <HorizontalStackLayout Margin="10, 0" Grid.Row="0" Spacing="170">
+                <Label 
+                    Text="Sneakers"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    />
+                <Label 
+                    Text="Ver todo 86"
+                    TextColor="Green"
+                    TextDecorations="Underline"
+                    FontAttributes="Bold"
+                    />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Grid.Row="1" Margin="10, 0" Spacing="20">
+                <Frame
+                    Margin="10"
+                    BorderColor="Gold"
+                    CornerRadius="100"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Grid.Column="0">
+
+                    <Image 
+                        Source="running.jpg"
+                        Aspect="AspectFill"
+                        Margin="-20"
+                        Grid.Column="0"
+                        />
+                </Frame>
+
+                <Label 
+                    Text="Runnning"
+                    FontSize="Subtitle"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    />
+                
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Grid.Row="2" Margin="10, 0" Spacing="20">
+                <Frame
+                    Margin="10"
+                    BorderColor="Gold"
+                    CornerRadius="100"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Grid.Column="0">
+
+                    <Image 
+                        Source="skate.png"
+                        Aspect="AspectFill"
+                        Margin="-30"
+                        Grid.Column="0"
+                        />
+                </Frame>
+
+                <Label 
+                    Text="Skateboarding"
+                    FontSize="Subtitle"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Grid.Row="3" Margin="10, 0" Spacing="20">
+                <Frame
+                    Margin="10"
+                    BorderColor="Gold"
+                    CornerRadius="100"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Grid.Column="0">
+
+                    <Image 
+                        Source="basket.png"
+                        Aspect="AspectFill"
+                        Margin="-20"
+                        Grid.Column="0"
+                        />
+                </Frame>
+
+                <Label 
+                    Text="Basketball"
+                    FontSize="Subtitle"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Grid.Row="4" Margin="10, 0" Spacing="20">
+                <Frame
+                    Margin="10"
+                    BorderColor="Gold"
+                    CornerRadius="100"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Grid.Column="0">
+
+                    <Image 
+                        Source="casual.webp"
+                        Aspect="AspectFill"
+                        Margin="-20"
+                        Grid.Column="0"
+                        />
+                </Frame>
+
+                <Label 
+                    Text="Casual"
+                    FontSize="Subtitle"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    />
+
+            </HorizontalStackLayout>
+
+        </Grid>
+
+        <HorizontalStackLayout Grid.Row="4" BackgroundColor="Black" Spacing="220">
+            <VerticalStackLayout Margin="10" Spacing="5">
+                <Label 
+                    Text="  Tienda para llevar"
+                    TextColor="GhostWhite"
+                    FontSize="10"
+                    />
+                <Label 
+                    Text="AMBERES"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    />
+            </VerticalStackLayout>
+
+            <Image>
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="iconos"
+                        Color="White"
+                        Size="30"
+                        Glyph= "&#xE804;"
+                        />
+                </Image.Source>
+            </Image>
+
+        </HorizontalStackLayout>
+
+    </Grid>
+    
+</ContentPage>

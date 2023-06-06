@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TDMPW_411_2P_EX"
+             x:Class="TDMPW_411_2P_EX.MainPage"
+            Title="MainPage"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarTextColor="Green"
+            >
+
+    <local:WelcomePage Title="Inicio">
+        <local:WelcomePage.IconImageSource>
+            <FontImageSource 
+                FontFamily="iconos"
+                Color="DimGray"
+                Size="50"
+                Glyph= "&#xE805;"
+                />
+        </local:WelcomePage.IconImageSource>
+    </local:WelcomePage>
+    <local:OrderPage Title="Ordena" IconImageSource="snkr.png" />
+    <local:TotalPage Title="Paga">
+        <local:TotalPage.IconImageSource>
+            <FontImageSource 
+                FontFamily="iconos"
+                Color="DimGray"
+                Size="50"
+                Glyph= "&#xF0D6;"
+                />
+            
+        </local:TotalPage.IconImageSource>
+    </local:TotalPage>
+
+</TabbedPage>

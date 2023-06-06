@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_EX.TotalPage"
+             Title="TotalPage">
+
+    <Grid Margin="10" ColumnDefinitions=".20*, .15*, .15*, .20*" RowDefinitions=".20*, .01*, .20*, .08*, .05*, .20*">
+        <Frame
+            Margin="10"
+            CornerRadius="100"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Grid.Column="0">
+            <Image 
+                x:Name="imgTenis"
+                Source="puma.jpg"
+                Aspect="AspectFill"
+                Margin="-20"
+                WidthRequest="80"
+                HeightRequest="80"
+                />
+        </Frame>
+
+        <VerticalStackLayout Margin="0,15,0,0" Grid.Column="1" Grid.ColumnSpan="2" Spacing="3">
+            <Label 
+                x:Name="lblTitle"
+                Text="Café del día: Chiapas"
+                FontSize="Subtitle"
+                FontAttributes="Bold"
+                />
+            <Label 
+                x:Name="lblCategory"
+                Text="Grande (16oz - 437ml)"
+                FontSize="Micro"
+                />
+            <Label 
+                x:Name="lblSize"
+                Text="0 calorias"
+                FontSize="Micro"
+                />
+            <Label 
+                x:Name="lblBrand"
+                Text="Sin leche"
+                FontSize="Micro"
+                />
+            <HorizontalStackLayout Spacing="15">
+                <Stepper 
+                x:Name="stpCantidad"
+                Minimum="1"
+                Increment="1"
+                WidthRequest="80"
+                HeightRequest="40"
+                HorizontalOptions="Start"
+                ValueChanged="stpCantidad_ValueChanged"
+                />
+                <Label 
+                    x:Name="lblCantidad"
+                    Text="1"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    />
+            </HorizontalStackLayout>
+            <Label 
+                Text="Cupón aplicado a este producto"
+                TextColor="Green"
+                FontSize="Micro"
+                FontAttributes="Bold"/>
+        </VerticalStackLayout>
+
+        <Label 
+            x:Name="lblPrice"
+            Margin="0,15,0,0"
+            Grid.Column="3"
+            Text="- $ 38.00"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"/>
+
+        <BoxView 
+            Grid.Row="1"
+            Grid.ColumnSpan="4"
+            Color="Gray"
+            HeightRequest="7"
+            VerticalOptions="Start"
+            />
+
+        <VerticalStackLayout Grid.Row="2" Grid.ColumnSpan="4" BackgroundColor="LightGray" Spacing="5">
+            
+            <Label 
+                Text="TAMBIÉN TE PUEDEN GUSTAR"
+                TextColor="DimGray"
+                FontSize="13"
+                FontAttributes="Bold"
+                />
+            
+            <HorizontalStackLayout VerticalOptions="Center" Spacing="20" HorizontalOptions="Center">
+                <VerticalStackLayout WidthRequest="100">
+                    <ImageButton 
+                        x:Name="tenis1"
+                        Source="forum.webp"
+                        Margin="10"
+                        CornerRadius="40"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        Grid.Column="0"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        BackgroundColor="White"
+                        Aspect="AspectFill"
+                        Clicked="tenis1_Clicked"
+                        />
+                    <Label 
+                        Text="Forum Easter Egg"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        />
+                    <Label 
+                        Text="$2,200.00"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        />
+                </VerticalStackLayout>
+                <VerticalStackLayout WidthRequest="100">
+                    <ImageButton 
+                        x:Name="tenis2"
+                        Source="j4.webp"
+                        Margin="10"
+                        CornerRadius="40"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        Grid.Column="0"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        BackgroundColor="White"
+                        Aspect="AspectFill"
+                        Clicked="tenis2_Clicked"
+                        />
+                    <Label 
+                        Text="Jordan 4 UNC"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        />
+                    <Label 
+                        Text="$4,500.00"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        />
+                </VerticalStackLayout>
+                <VerticalStackLayout WidthRequest="100">
+                    <ImageButton 
+                        x:Name="tenis3"
+                        Source="puma.jpg"
+                        Margin="10"
+                        CornerRadius="40"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        Grid.Column="0"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        BackgroundColor="White"
+                        Aspect="AspectFill"
+                        Clicked="tenis3_Clicked"
+                        />
+                    <Label 
+                        Text="Puma LQDCell"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        />
+                    <Label 
+                        Text="$2,500.00"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout Grid.Row="3" Grid.ColumnSpan="4">
+            <Label 
+                Text="RECOMPENSAS DISPONIBLES"
+                VerticalTextAlignment="Center"
+                />
+            
+        </HorizontalStackLayout>
+
+        <Button 
+            Margin="5, 0"
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            BackgroundColor="WhiteSmoke"
+            BorderColor="Gray"
+            BorderWidth=".5"
+            CornerRadius="7"
+            Text="15% de descuento"
+            TextColor="Black"
+            LineBreakMode="CharacterWrap"
+            >
+            <Button.ImageSource>
+                <FontImageSource 
+                    FontFamily="iconos"
+                    Color="Green"
+                    Size="40"
+                    Glyph= "&#xF0D6;"
+                    />
+            </Button.ImageSource>
+        </Button>
+
+        <Button 
+            Margin="5, 0"
+            Grid.Row="4"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            BackgroundColor="Transparent"
+            BorderColor="Gray"
+            BorderWidth="1"
+            CornerRadius="7"
+            Text="$300 de descuento"
+            TextColor="Black"
+            LineBreakMode="CharacterWrap"
+            >
+            <Button.ImageSource>
+                <FontImageSource 
+                    FontFamily="iconos"
+                    Color="Green"
+                    Size="40"
+                    Glyph= "&#xF0D6;"
+                    />
+            </Button.ImageSource>
+        </Button>
+
+        <VerticalStackLayout Grid.Row="5" Grid.ColumnSpan="4" VerticalOptions="Center" Spacing="30">
+            <Label 
+                x:Name="lblTotal"
+                Text="Total................................$ 0.00"
+                FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="End"
+                />
+            <Button 
+                x:Name="btnTotal"
+                Text="Total $ 0.00"
+                FontSize="16"
+                FontAttributes="Bold"
+                BackgroundColor="Green"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                CornerRadius="20"/>
+        </VerticalStackLayout>
+
+    </Grid>
+    
+</ContentPage>

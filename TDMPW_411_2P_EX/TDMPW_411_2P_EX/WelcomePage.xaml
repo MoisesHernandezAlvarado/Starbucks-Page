@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_EX.WelcomePage"
+             Title="WelcomePage">
+
+    <Grid Margin="15" RowDefinitions=".15*, .05*, .03*, .50*, .32*" BackgroundColor="WhiteSmoke">
+        <Label 
+            Grid.Row="0"
+            Text="Bienvenido (a)"
+            FontSize="Title"
+            FontAttributes="Bold"
+            VerticalTextAlignment="Center"
+            BackgroundColor="White"
+            />
+
+        <HorizontalStackLayout Grid.Row="1" Spacing="10" BackgroundColor="White">
+            <Image>
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="iconos"
+                        Color="DimGray"
+                        Size="20"
+                        Glyph= "&#xE801;"
+                        />
+                </Image.Source>
+            </Image>
+            <Label 
+                Text="Ingresar"
+                VerticalTextAlignment="Center"
+                />
+            <Image Margin="30,0,0,0">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="iconos"
+                        Color="DimGray"
+                        Size="20"
+                        Glyph= "&#xE800;"
+                        />
+                </Image.Source>
+            </Image>
+            <Label 
+                Text="Inbox"
+                VerticalTextAlignment="Center"
+                />
+            <Image Margin="40,0,0,0">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="iconos"
+                        Color="DimGray"
+                        Size="20"
+                        Glyph= "&#xE802;"
+                        />
+                </Image.Source>
+            </Image>
+            <Image Margin="90,0,0,0">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="iconos"
+                        Color="DimGray"
+                        Size="20"
+                        Glyph= "&#xE803;"
+                        />
+                </Image.Source>
+            </Image>
+        </HorizontalStackLayout>
+
+        <BoxView 
+            Grid.Row="2"
+            Color="LightGray"
+            HeightRequest="10"
+            VerticalOptions="Start"
+            />
+
+        <Grid Grid.Row="3" RowDefinitions=".20*, .50*, .30*">
+            <Label 
+                Text="SNEAKERS COLABS"
+                FontSize="Small"
+                FontAttributes="Bold,Italic"
+                />
+            <Image 
+                Grid.Row="1"
+                Source="jordan6ts.gif"
+                IsAnimationPlaying="True"
+                Aspect="AspectFill"
+                />
+            <Label 
+                Grid.Row="2"
+                Text="Consigue los mejores sneakers"
+                FontSize="Subtitle"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="4" RowDefinitions=".50*, .50*">
+            <Image
+                Grid.RowSpan="2"
+                Source="image1.webp"
+                Aspect="AspectFill"
+                />
+
+            <Label 
+                Margin="3, 7"
+                Text="Comparte en ig tus sneakers&#10; favoritos y obten un&#10; un descuento"
+                TextColor="White"
+                HorizontalTextAlignment="End"
+                />
+            <Button 
+                Grid.Row="1"
+                Text="Únete"
+                FontAttributes="Bold"
+                CornerRadius="100"
+                BackgroundColor="Green"
+                WidthRequest="80"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                />
+        </Grid>
+
+    </Grid>
+</ContentPage>
